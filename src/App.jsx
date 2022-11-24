@@ -11,7 +11,6 @@ function App() {
         <TagLine />
         <EmiForm />
       </Container>
-
     </div>
   );
 }

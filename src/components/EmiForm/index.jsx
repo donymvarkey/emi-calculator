@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button, Card, Col, Form, Row } from 'react-bootstrap'
 import { calculateEmi } from '../../services/calculateEmi'
 import EmiInfo from '../EmiInfo'
+import Footer from '../Footer'
 import RequiredMark from '../RequiredMark'
 
 const EmiForm = () => {
@@ -38,7 +39,7 @@ const EmiForm = () => {
   return (
     <React.Fragment>
       <div className='d-flex align-items-center justify-content-center'>
-        <Card className='border-0 shadow-sm p-3 my-2 w-50'>
+        <Card className='border-0 shadow-sm p-3 my-2'>
           <Card.Body>
             <Form>
               <Row>
@@ -68,6 +69,7 @@ const EmiForm = () => {
               </Button>
             </Form>
           </Card.Body>
+          <Footer />
         </Card>
       </div>
       {
